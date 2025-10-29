@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="font-sans bg-gray-50 min-h-screen">
+    <div className="font-poppins bg-gray-50 min-h-screen">
       <Navbar />
       <main className="pt-20 flex flex-col items-center">
         <ProfileCard />

@@ -1,20 +1,24 @@
 import React from 'react';
-import profile from '../assets/images/profile.jpg'; // ganti nanti dengan gambar kamu
+import profile from '../assets/images/profile.jpg';
 
 function ProfileCard() {
   return (
-    <div className="flex flex-col items-center text-center bg-white shadow-lg rounded-xl p-6 max-w-sm mx-auto">
+    <section className="bg-gradient-to-b from-blue-100 to-white pt-28 pb-16 text-center">
       <img
         src={profile}
         alt="Profile"
-        className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-blue-500"
+        className="w-40 h-40 mx-auto rounded-full border-4 border-blue-500 shadow-md object-cover"
       />
-      <h2 className="text-2xl font-semibold text-gray-800">Nesa Fatikha</h2>
-      <p className="text-gray-500 text-sm mb-4">Frontend Developer</p>
-      <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+      <h2 className="mt-6 text-3xl font-bold text-gray-800">Nesa Fatikha</h2>
+      <p className="text-blue-600 font-medium mt-2">Frontend Developer</p>
+      <p className="max-w-md mx-auto mt-4 text-gray-600 leading-relaxed">
+        Passionate about creating beautiful, user-friendly interfaces using
+        modern web technologies like React and Tailwind CSS.
+      </p>
+      <button className="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
         Contact Me
       </button>
-    </div>
+    </section>
   );
 }
 
